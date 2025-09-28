@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Jekyll SEO tag -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,14 +18,11 @@
     <meta property="og:image" content="https://cybersecurity.club.uttara.ac.bd/assets/images/csc_white.png">
     <meta name="theme-color" content="#1e3a8a">
     
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://cybersecurity.club.uttara.ac.bd/CertificateGenerator/">
     
-    <!-- Default Nav bar -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="certificate-style.css">
     
-    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
@@ -41,7 +37,6 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="header">
         <div class="header-wrapper">
             <div class="header-image-container">
@@ -121,10 +116,8 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main class="page-content" aria-label="Content">
         <div class="certificate-container">
-            <!-- Certificate Generator Section -->
             <section class="certificate-section section-animated">
                 <div class="heading-title heading-animated">Participation Certificate</div>
                 <div class="certificate-description_container">
@@ -172,7 +165,6 @@
                 <div id="successMessage" class="success-message">
                     <i class="fas fa-check-circle"></i>
                     <p>Certificate generated successfully!</p>
-                                    <!-- Certificate Preview Section -->
                 <div id="certificatePreview" class="certificate-preview-section">
                     <div class="certificate-display">
                         <img id="certificateImage" alt="Generated Certificate" class="certificate-img">
@@ -200,7 +192,6 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-wrapper">
             <div class="footer-info-container">
@@ -218,7 +209,6 @@
                 <div class="footer-description-container">
                 </div>
             </div>
-            <!-- Footer End -->
             <div class="footer-social-container">
                 <a class="social-link" rel="me noopener" target="_blank" href="https://facebook.com/csc.uu.bd" title="Facebook CSC">
                     <i class="fa-brands fa-square-facebook"></i>
@@ -234,18 +224,14 @@
             <div class="site-credit">
                 ©2025 | Developed by Cyber Security Club, Uttara University 
             </div>
-    <!-- GitHub Contributors Section -->
 <div class="github-contributors-section">
   <div class="github-contributors-title">
       Thanks to our awesome contributors</div>
   <div id="github-contributors-list" class="github-contributors-list">
-    <!-- Contributors will be loaded here -->
   </div>
 </div>
-<!-- GitHub Contributors Section End -->
     </footer>
 
-    <!-- Welcome Notification Popup -->
     <div id="welcomeNotification" class="notification-popup">
         <div class="notification-content">
             <div class="notification-image">
@@ -270,7 +256,6 @@
     
     
     <script>
-        // Show welcome notification when page loads
         function showWelcomeNotification() {
             const notification = document.getElementById('welcomeNotification');
             notification.style.display = 'flex';
@@ -291,7 +276,6 @@
             }, 300);
         }
 
-        // Show notification when page loads
         window.addEventListener('load', () => {
             setTimeout(showWelcomeNotification, 1000); // Show after 1 second delay
         });
